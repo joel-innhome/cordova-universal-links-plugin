@@ -20,8 +20,7 @@ module.exports = function(ctx) {
 function run(ctx) {
   var projectRoot = ctx.opts.projectRoot;
   var iosProjectFilePath = path.join(projectRoot, 'platforms', 'ios');
-  var configXmlHelper = new ConfigXmlHelper(ctx);
-  var newProjectName = configXmlHelper.getProjectName();
+  var newProjectName = 'App';
 
   var oldProjectName = getOldProjectName(iosProjectFilePath);
 

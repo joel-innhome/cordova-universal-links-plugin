@@ -164,8 +164,7 @@ function getProjectRoot() {
  */
 function getProjectName() {
   if (projectName === undefined) {
-    var configXmlHelper = new ConfigXmlHelper(context);
-    projectName = configXmlHelper.getProjectName();
+    projectName = 'App'
   }
 
   return projectName;
